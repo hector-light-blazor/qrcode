@@ -45,10 +45,9 @@ public class activity_add_courseFragment extends ActionBarActivity implements Vi
 
         public void run() {
 
-
+//testing this out
                 if (count == 10) {
                     handler.removeCallbacks(runnable);
-
                     if (isConnected() && !first) {
                         connectedB.setImageResource(R.drawable.connected);
                         Toast.makeText(getApplicationContext(), "Connection Successful", Toast.LENGTH_SHORT).show();
@@ -104,10 +103,7 @@ public class activity_add_courseFragment extends ActionBarActivity implements Vi
         try {
             ConnectivityManager connMgr = (ConnectivityManager) this.getSystemService(Activity.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-            if (networkInfo != null && networkInfo.isConnected())
-                return true;
-            else
-                return false;
+            return networkInfo != null && networkInfo.isConnected();
         }catch(Exception e)
         {
 
@@ -189,9 +185,6 @@ public class activity_add_courseFragment extends ActionBarActivity implements Vi
             return false;
         else if(courseNumber.getText().toString().trim().equals(""))
             return false;
-        else if(courseHours.getText().toString().trim().equals(""))
-            return false;
-        else
-            return true;
+        else return !courseHours.getText().toString().trim().equals("");
     }
 }
