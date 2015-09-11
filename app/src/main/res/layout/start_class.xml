@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="#CDB99C">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Course Information"
+                        android:id="@+id/textView"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#3399CC"
+                        android:textStyle="bold" />
+
+            <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/lay"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:background="#fffcfd">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/documentc"
+                            android:id="@+id/editText"
+                            android:hint="Course Name" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/calculator"
+                            android:inputType="number"
+                            android:hint="Course Number"
+                            android:ems="10"
+                            android:id="@+id/editText2" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/calculator"
+                            android:inputType="number"
+                            android:hint="Course Hours"
+                            android:ems="10"
+                            android:id="@+id/editText3" />
+                    </LinearLayout>
+
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Instructor Information"
+                        android:id="@+id/tes"
+                        android:layout_below="@+id/lay"
+                        android:layout_marginTop="22dp"
+                        android:layout_centerVertical="true"
+                        android:textColor="#3399CC"
+                        android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/lay2"
+                android:layout_below="@+id/tes"
+                android:layout_alignParentStart="true"
+                android:background="#fffcfd">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person"
+                    android:id="@+id/editText4"
+                    android:hint="First Name"
+                    android:inputType="text" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person"
+                    android:inputType="text"
+                    android:hint="Middle Name"
+                    android:ems="10"
+                    android:id="@+id/editText5" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person"
+                    android:inputType="text"
+                    android:hint="Last Name"
+                    android:ems="10"
+                    android:id="@+id/editText6" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Class Information"
+                android:layout_below="@+id/lay2"
+                android:layout_marginTop="22dp"
+                android:id="@+id/textView2"
+                android:textColor="#3399CC"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/textView2"
+                android:background="#fcffff">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/calendar"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editText7"
+                    android:hint="Begin Date" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/calendar"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editText8"
+                    android:hint="End Date" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/location"
+                    android:id="@+id/editText9"
+                    android:hint="Address, City, State" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/calculator"
+                    android:ems="10"
+                    android:id="@+id/editText10"
+                    android:hint="Size Limit" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/agency"
+                    android:id="@+id/editText11"
+                    android:hint="Provider Name" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

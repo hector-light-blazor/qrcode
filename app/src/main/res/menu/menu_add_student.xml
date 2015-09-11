@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/action_save" android:title="@string/save"
+        android:icon="@drawable/save_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_cancel" android:title="@string/cancel"
+        android:icon="@drawable/cancel_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+</menu>

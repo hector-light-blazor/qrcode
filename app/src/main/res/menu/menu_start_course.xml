@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/action_save" android:title="@string/save"
+        android:icon="@drawable/save_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_cancel" android:title="@string/cancel"
+        android:icon="@drawable/cancel_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_acourse" android:title="@string/title_activity_activity_add_course"
+        android:icon="@drawable/add_course"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_ainstructor" android:title="@string/add_instructor"
+        android:icon="@drawable/add_user"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_scourse" android:title="@string/action_course"
+        android:icon="@drawable/search_course_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_sinstructor" android:title="@string/action_sinstructor"
+        android:icon="@drawable/find_user_24"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>
